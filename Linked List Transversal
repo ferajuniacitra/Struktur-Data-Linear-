@@ -1,0 +1,20 @@
+print("STUDI KASUS 3")
+class Node:
+    def __init__ (self, data):
+        self.data = data
+        self.next = None
+
+# buat node
+node1 = Node (40)
+node2 = Node (50)
+node3 = Node (60)
+
+# hubungkan
+node1.next = node2
+node2.next = node3
+
+# traversal
+current = node1
+while current:
+    print(current.data)
+    current = current.next
